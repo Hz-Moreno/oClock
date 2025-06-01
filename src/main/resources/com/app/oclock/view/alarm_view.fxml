@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.app.oclock.controllers.AlarmController" spacing="10" style="-fx-padding: 20;">
+  <Label text="Set Alarm (HH:MM)" />
+  <TextField fx:id="timeInput" promptText="e.g., 07:30" />
+  <TextField fx:id="titleInput" promptText="Title (e.g., Wake Up)"/>
+  <TextArea fx:id="descriptionInput" promptText="Description..." prefRowCount="3"/>
+  <Button text="Set Alarm" onAction="#setAlarm"/>
+  <Label fx:id="statusLabel"/>
+</VBox>
